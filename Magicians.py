@@ -15,4 +15,4 @@ def make_great(magicians):
     return great_magicians
 
 
-show_magicians(make_great(magicians))
+show_magicians(make_great(magicians[:]))
