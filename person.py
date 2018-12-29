@@ -6,4 +6,8 @@ def build_person(first_name,last_name, age =''):
     return person
 
 musician = build_person('jimi','hendrix', age = 27)
+programmer = build_person('oscar','lopez')
+brogrammer = build_person('shawn','tarver',22)
 print(musician)
+print(brogrammer)
+print(programmer)

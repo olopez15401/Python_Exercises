@@ -1,12 +1,14 @@
-def make_album(artist_name, album_title):
+def make_album(artist_name, album_title,number_of_tracks = 0):
     album = {
         "Artist": artist_name,
         "Album Title": album_title
     }
+
+    if number_of_tracks:
+        albulm[number_of_tracks] = number_of_tracks
+
     return album
 
-
-#print(make_album("Oscar", "Jiggle Wut"))
 
 def make_albums():
     done = False

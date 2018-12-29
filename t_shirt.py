@@ -3,4 +3,4 @@ def make_shirt(size='Large', printed_message="Shawn hates tabs"):
           printed_message)
 
 make_shirt('xl','Python 3 or bust')
-make_shirt()
+make_shirt('m')
