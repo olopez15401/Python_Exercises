@@ -18,9 +18,10 @@ class Restaurant():
     def increment_number_served(self, number_served):
         self.number_served += number_served
 
-
+"""
 outback = Restaurant('Outback','Casual dining')
 outback.describe_restaurant()
 outback.open_restaurant()
 outback.increment_number_served(10)
 print(str(outback.number_served))
+"""

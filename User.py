@@ -10,7 +10,8 @@ class User():
     def greet_user(self):
         print("Hello " + self.first_name.title() + " " + self.last_name.title() + "!")
 
+"""
 oscar = User("oscar","Lopez",1)
 oscar.describe_user()
 oscar.greet_user()
-
+"""
