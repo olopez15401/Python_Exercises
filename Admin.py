@@ -3,12 +3,25 @@ class Admin(User):
 
     def __init__(self,first_name,last_name,user_id):
         super().__init__(first_name,last_name,user_id)
-        self.privilages=['can add posts','can delete posts','can ban users']
+        privs = ['add users','ban users','add posts', 'delete posts']
+        self.privilages=Privilages(privs)
 
+"""
     def show_privilages(self):
         for privilage in self.privilages:
             print(privilage.title())
+"""
 
-me = Admin('Oscar','Lopez',3609)
+class Privilages():
+    def __init__(self,privilages):
+        self.privilages = privilages
+
+    def show_privilages(self):
+        for priv in self.privilages:
+            print(priv)
+
+"""
+me = Admin('Oscar','Lopez',2046)
 me.describe_user()
-me.show_privilages()
+me.privilages.show_privilages()
+"""

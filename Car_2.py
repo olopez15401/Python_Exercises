@@ -53,6 +53,10 @@ class ElectricCar(Car_2):
         super().__init__(make, model, year)
         self.battery = Battery()
 
+    def upgrade_battery(self):
+        if self.battery.battery_size < 85:
+            self.battery.battery_size = 85
+
 
 class Battery():
     """ A simple attempt to model a battery for an electric car """
@@ -76,7 +80,17 @@ class Battery():
         message += " miles on a full charge."
         print(message)
 
+"""
 my_tesla = ElectricCar('tesla', 'model s', 2018)
 print(my_tesla.get_descriptive_name())
 my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
+"""
+
+old_tesla = ElectricCar('Tesla','Roadster',2010)
+#initial battery
+print(old_tesla.get_descriptive_name())
+old_tesla.battery.get_range()
+#battery upgrade
+old_tesla.upgrade_battery()
+old_tesla.battery.get_range()
