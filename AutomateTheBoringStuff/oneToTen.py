@@ -3,3 +3,11 @@ def printToTen():
         print(str(i))
 
 printToTen()
+
+def whileLoopPrintToTen():
+    i = 1
+    while (i <= 10):
+        print(str(i))
+        i+=1
+
+whileLoopPrintToTen()
