@@ -1,0 +1,57 @@
+Functions
+++++++++++++
+Return statements consist of:
+    - 'return' keyword
+    - the value or expression that the function should return.
+
+Function calls can be used in an expression because it evaluates
+to its return value.
+
+None = null
+
+All function calls need to return a value, so even functions like print()
+return None although it is not intended to return anything just print.
+
+None gets returned for any function without return statement.
+
+
+Keyword Arguments
++++++++++++++++++++
+keyword Arguments often used for optional parameters. 
+eg.
+    print('Hello')
+    print('World')
+
+    Output:
+        Hello
+        World
+
+    print('Hello',end='')
+    print('World)
+
+    Output:
+        HelloWorld  <-- newline ('\n') gets replaced by '' by using end=''
+    
+    print('cats','dogs','mice',sep=',')
+
+    Output:
+        cats,dogs,mice
+
+
+Local and Global Scope
+++++++++++++++++++++++++++
+parameters and variables assigned in a function are said to exist in that function's local scope.
+Variables assigned outside all functions are said to exist in the global scope.
+
+Variables and parameters cannot be both local and global.
+
+Code in global scope cannot use any local variables
+                    BUUUT
+local scope variables can access global variables.
+
+Code in a functions local scope cannot use variables in any other local scope.
+
+Same name can be used for different variables if they are in different scopes.
+
+BAD HABIT: Dont rely on global variables!
+
