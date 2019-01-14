@@ -19,4 +19,8 @@ class SetLocationTestCase(unittest.TestCase):
         location = set_location("san diego","united states","california")
         self.assertEqual(location,"San Diego, California, United States")
 
+    def test_set_location_with_population(self):
+        location = set_location('san antonio','united states','texas',50000)
+        self.assertEqual(location,'San Antonio, Texas, United States, Population: 50000')
+
 unittest.main()
