@@ -9,4 +9,10 @@ class NameTestCase(unittest.TestCase):
         formatted_name = get_formatted_name('janis','joplin')
         self.assertEqual(formatted_name, 'Janis Joplin')
 
+    def test_first_last_middle_name(self):
+        """Do names like "Wolfgange Anadeus Mozart" work?"""
+        formatted_name = get_formatted_name('wolfgang','mozart','anadeus')
+        self.assertEqual(formatted_name, "Wolfgang Anadeus Mozart")
+
+
 unittest.main()

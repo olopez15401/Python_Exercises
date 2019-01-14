@@ -10,9 +10,10 @@ import json
 class favorite_number():
     
     def __init__(self):
+        self.number = 0
         self.prompt_user()
         self.save_number()
-        print(self.read_number())
+        print("Your favorite number is : " + self.read_number())
     
     def prompt_user(self):
         while True:
